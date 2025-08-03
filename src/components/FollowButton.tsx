@@ -6,7 +6,7 @@ import { Loader2Icon } from "lucide-react";
 import toast from "react-hot-toast";
 import { toggleFollow } from "@/actions/user.action";
 
-function FollowButton({ userId }) {
+function FollowButton({ userId }: { userId: string }) {
   const [isLoading, setIsLoading] = useState(false);
 
   const handleFollow = async () => {

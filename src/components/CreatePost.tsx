@@ -23,7 +23,7 @@ const CreatePost = () => {
 
       setIsPosting(true);
       try{
-        const result =await createPost(content,imageUrl)
+        const result = await createPost(content,imageUrl)
         if(result?.success) {
           // Reset form fields
           setContent("");
